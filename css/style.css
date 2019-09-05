@@ -187,9 +187,9 @@ a {
 .animation_css div {
     border-radius: 50%;
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 75%;
-    width: 150%;
+    width: 50%;
     bottom: 100%;
 }
 .animation_css div:nth-of-type(odd) {
@@ -226,23 +226,27 @@ a {
 @keyframes slide {
     0% {
         left: 75%
+        z-index: 0;
     }
     50% {
         left: 25%;
     }
     100% {
         left: 75%;
+        z-index: 1000;
     }
 }
 @-webkit-keyframes slide {
     0% {
         left: 75%
+        z-index:0;
     }
     50% {
         left: 25%;
     }
     100% {
         left: 75%;
+        z-index: 1000;
     }
 }
 
