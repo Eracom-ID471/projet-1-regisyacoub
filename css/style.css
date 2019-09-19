@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url(../img/background.jpg);
+  background-image: url(../images/background.jpg);
   background-attachment: fixed;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,10 @@ stroke-width: 1;
     transform: translateY(-300%);
   }
 }
+h2{
 
+  font-weight: 100;
+}
 .intro{
   position: absolute;
   top: 0;
@@ -93,6 +96,8 @@ h1 {
   /* animation: flicker 1.5s infinite alternate; */
 }
 
+
+
 h1::-moz-selection {
   background-color: var(--neon-border-color);
   color: var(--neon-text-color);
@@ -111,7 +116,7 @@ h1:focus {
   outline: none;
 }
 h2{
-  text-shadow: 1px 1px 6px grey;
+  padding-bottom: 40px;
 }
 
 
@@ -147,6 +152,11 @@ h2{
 .responsive {
   max-width: 20%;
   height: auto;
+}
+
+
+.img-responsive {
+  max-width: 50%
 }
 img {
     margin: 0 auto;
@@ -197,7 +207,7 @@ a {
 }
 .animation_css div:nth-of-type(even) {
     background: #fff;
-    border: 2px solid #000;
+    border: 1px solid #000;
 }
 .animation_css div:nth-of-type(3) {
     height: 10px;
@@ -229,29 +239,62 @@ a {
         z-index: 0;
     }
     50% {
-        left: 25%;
+        left: 20%;
     }
     100% {
         left: 75%;
-        z-index: 1000;
+        z-index: 500;
     }
 }
 @-webkit-keyframes slide {
     0% {
         left: 75%
-        z-index:0;
+        z-index: 0;
     }
     50% {
-        left: 25%;
+        left: 20%;
     }
     100% {
         left: 75%;
-        z-index: 1000;
+        z-index: 500;
     }
 }
 
 .space{
   margin-top: 10%;
   margin-bottom: 10%;
+}
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+  .borders{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .space{
+    margin-top: 80px;
+  }
+
+}
+.borders{
+  margin-top: 15%;
+  margin-bottom: 30%;
+}
+
+.col-xs-6{
+  margin-bottom: 3%;
+  padding: inherit;
+}
+
+.double{
+  margin-bottom: 5%;
+}
+
+.header{
+  background-color: white;
+  z-index: 999999;
 }
