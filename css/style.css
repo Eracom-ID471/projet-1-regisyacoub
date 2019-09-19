@@ -83,11 +83,10 @@ img.example-image:hover  {
 }
 
 h1 {
-  font-size: 4.5vw;
+  font-size: 2vw;
   font-weight: 100;
   text-align: center;
   color: #000;
-  padding: 4vw 1vw;
   text-shadow: 5px 5px 16px grey;
   /*border: 0.1vw solid #a74a4a;*/
   border-radius: 1vw;
@@ -296,5 +295,5 @@ a {
 
 .header{
   background-color: white;
-  z-index: 999999;
+  z-index: 2000;
 }
